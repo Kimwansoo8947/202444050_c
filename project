@@ -22,3 +22,25 @@ int main() {
 	return 0;
 }
 
+// 만약 무한반복문으로 구현한다면 
+#include<stdio.h>
+
+int main() {
+	int num;
+	int sum = 0;
+
+
+	while (1) {
+		printf("양수를 입력하시오: ");
+		scanf("%d", &num);
+		if (num > 0) {
+			sum += num;
+			printf("지금까지 누적된 합은 %d\n", sum);
+		}
+		else {
+			printf("종료됩니다.");
+			break;
+		}
+	}
+	return 0;
+}
